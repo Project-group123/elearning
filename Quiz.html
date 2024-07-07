@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning/Quiz</title>
+    <link rel="shortcut icon"
+        href="./img/Cartoon_light_bulb_stock_vector__Illustration_of_ecology_-_17648518-removebg-preview.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+
+<body>
+    <div id="display"></div>
+    <div class="flow">
+        <div id="how"></div>
+        <div id="id"></div>
+        <div id="disp"></div>
+        <div id="sag">
+           <a href="./Dash.html"> <img src="./img/Cartoon_light_bulb_stock_vector__Illustration_of_ecology_-_17648518-removebg-preview.png"
+            alt="img" class="img">
+    </div></a>
+
+        <div id="quiz-container">
+
+            <div class="questions">
+                <h3 id="question"></h3>
+                <ol type="A">
+                    <div class="gen">
+                        <div class="fle">
+                            <li class="option" style="gap:50px;"><span id="option0" onclick="calcScore(this)"></span>
+                            </li>
+                            <div id="me"></div>
+                            <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+                        </div>
+                        <div class="twe">
+                            <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+                            <div id="me"></div>
+                            <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+
+                        </div>
+                    </div>
+
+
+
+
+                </ol>
+
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="next">Next</button>
+
+                <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="scoreboard">
+        <div id="score"></div>
+    </div>
+    <button type="button" id="scorebtn2" onclick="backToQuiz()">Play Again</button>
+    </div>
+    <script src="./Quiz.js"></script>
+</body>
+
+</html>

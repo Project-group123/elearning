@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-learning/Dashboard</title>
+  <link rel="stylesheet" href="Dash.css">
+</head>
+
+<body>
+  <div class="big-flex">
+    <div class="cover1">
+      <div class="logo">
+       <a href="./Dash.html"><img src="./img/Cartoon_light_bulb_stock_vector__Illustration_of_ecology_-_17648518-removebg-preview.png" alt=""></a> 
+        <h1>E-learning</h1>
+      </div>
+      <div class="links">
+        <a href="./Dash.html">Class Room</a>
+        <a href="./Course.html">Courses</a>
+        <a href="https://www.coursera.org/">Online Tutorials</a>
+        <a href="./Quiz.html">Quiz</a>
+        <a href="./Stat.html">Result</a>
+      </div>
+      <div class="sign-Out">
+        <img src="./img/download.png" onclick="signO()" alt="">
+      </div>
+    </div>
+    <div class="cover2">
+      <div class="profile">
+        <h3>Welcome</h3>
+        <div class="flex-credentials">
+          <h2 id="usernameDisplay"></h2>
+          <div id="dip"></div>
+        </div>
+      </div>
+    </div>
+    <div class="chat">
+      <div id="displayChat" class="wl100 p-3 pb-5"></div>
+      <div class=" w100 p-3">
+        <input type="text" id="chatH" class="w-75 w753" placeholder="Type your chat" />
+        <button onclick="submitData()"class="btnsend">Send</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js"></script>
+
+  
+  <script type="module" src="./Dash.js"></script>
+</body>
+
+</html>

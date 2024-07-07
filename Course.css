@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+.big-flex2 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  margin-top: 60px;
+  height: 500px;
+  left: 30%;
+  width: 600px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+.image {
+  margin-left: 90px;
+}
+.image img {
+  margin-left: -130px;
+  margin-top: 200px;
+  width: 150px;
+}
+.column-all {
+  display: flex;
+  margin-top: 90px;
+}
+.let input {
+  padding: 10px;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+}
+#showErr {
+  position: absolute;
+  top: 15%;
+}
+.let input::placeholder {
+  padding: 10px;
+}
+.btn3 {
+  padding: 10px;
+  border-radius: 20px;
+}
+#disp {
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  text-transform: uppercase;
+  color: black;
+}
+@media (max-width: 770px) {
+  body {
+    margin: 0px !important;
+  }
+  .big-flex2 {
+    position: relative;
+    left: 5%;
+    width: 500px;
+  }
+  .image img {
+    position: absolute;
+    left: 15%;
+    width: 100px;
+  }
+}
+@media (max-width: 430px) {
+  .big-flex2 {
+    position: relative;
+    margin-top: 20px;
+    height: 490px;
+    left: 10%;
+    width: 350px;
+  }
+  .image {
+    position: absolute;
+    left: 15%;
+  }
+  .btn3 {
+    padding: 5px;
+    width: 90px;
+  }
+  .let input {
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  #disp {
+    position: absolute;
+    left: 30%;
+  }
+}
+@media (max-width: 380px) {
+  .big-flex2 {
+    position: relative;
+    margin-top: 20px;
+    height: 490px;
+    left: 4%;
+    width: 350px;
+  }
+  .image {
+    position: absolute;
+    left: 15%;
+  }
+  .btn3 {
+    padding: 5px;
+    width: 90px;
+  }
+  .let input {
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  #disp {
+    position: absolute;
+    left: 30%;
+  }
+}
+@media (max-width: 330px) {
+  .big-flex2 {
+    position: relative;
+    margin-top: 5px;
+    height: 530px;
+    left: 1%;
+    width: 315px;
+  }
+  .image {
+    position: absolute;
+    left: 15%;
+  }
+  .btn3 {
+    padding: 5px;
+    width: 90px;
+  }
+  .let input {
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  #disp {
+    position: absolute;
+    left: 30%;
+  }
+}

@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.chart-container {
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.bars {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 100px;
+}
+
+.bar {
+  width: 50px;
+
+  background-color: #0b0c0c; /* default color */
+  position: relative;
+  overflow: hidden;
+  transition:  0.3s ease;
+}
+
+.bar::before {
+  content: attr(data-value);
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+#updateButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.bar {
+  width: 50px;
+ 
+  background-color: black; /* default color */
+  position: relative;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  height: var(--bar-height, 0); /* Use --bar-height for dynamic height */
+}
+
+.bar::before {
+  content: attr(data-value);
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
