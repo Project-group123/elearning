@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
       window.location.href = "Login.html";
 
       signupSection.style.display = "block";
-    }, 9000);
+    }, 4000);
   });
   

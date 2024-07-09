@@ -24,7 +24,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
-// const gitHUB = new();
 
 const signInF = () => {
   signInWithPopup(auth, provider)
@@ -115,11 +114,4 @@ const creaty = () => {
 
 window.creaty = creaty;
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   let username = localStorage.getItem("username");
-//   if (username) {
-//     document.getElementById("usernameDisplay").textContent =  username;
-//   } else {
-//     document.getElementById("usernameDisplay").textContent = "Username not found";
-//   }
-// });
+
